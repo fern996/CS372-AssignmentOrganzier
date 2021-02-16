@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Help</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../assets/css/materialize.min.css" media="screen,projection" />
+    <!--Import help.css-->
+    <link type="text/css" rel="stylesheet" href="../assets/css/help.css" media="screen,projection" />
+    <!-- Import font awesome icons -->
+    <link href="../../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col s2">
+                <ul class="sidenav sidenav-fixed left-align">
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li>
+                                <div class="collapsible-header">Home</div>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href="../help.html#introduction">Introduction</a></li>
+                                        <li><a href="../help.html#gettingAround">Getting Around</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">Semester</div>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href="./semester_help.html#addsemester">Add Semester</a></li>
+                                        <li><a href="./semester_help.html#viewSemester">View Semester</a></li>
+                                        <li><a href="./semester_help.html#editSemester">Edit Semester</a></li>
+                                        <li><a href="./semester_help.html#deleteSemester">Delete Semester</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="active">
+                                <div class="collapsible-header">Course</div>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href="#addCourse">Add Course</a></li>
+                                        <li><a href="#viewCourse">View Course</a></li>
+                                        <li><a href="#editCourse">Edit Course</a></li>
+                                        <li><a href="#deleteCourse">Delete Course</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">Assignment</div>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href="./assignment_help.html#addAssignment">Add Assignment</a></li>
+                                        <li><a href="./assignment_help.html#viewAssignment">View Assigment</a></li>
+                                        <li><a href="./assignment_help.html#openAssignment">Open Assignment</a></li>
+                                        <li><a href="./assignment_help.html#deleteAssignment">Delete Assignment</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">Settings</div>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href="./settings_help.html#changeBackUpLocation">Change Local Back-Up Directory</a></li>
+                                        <li><a href="./settings_help.html#resetBackUpLocation">Change Local Back-Up Directory</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="semester" class="col s10">
+
+                <div class="row">
+                    <h5>Getting Started</h5>
+                    <div id="home" class="col 9">
+                        To get to the course page you can click on the course icon on the
+                        <a href="../home.html"> home page</a>. On the course page you can add a course, edit a course, or delete a course.
+                    </div>
+                </div>
+
+                <div id="addCourse" class="row">
+                    <h5>ADD Course</h5>
+                    <div class="col s9">
+                        <p>(1) In the semester field start typing the semester term or year e.g. Winter or 2020. You should immediately see a drop-down list of all semesters matching your input. </p>
+                    </div>
+                    <div class="col s9 offset-s1"><img src="../assets/images/course/add-course-semester.png" class="responsive-img" alt="semester field"></div>
+                    <div class="col s9">
+                        <p>(2) From the drop-down select the semester you want to add a course to. E.g. you can select Winter 2020, or any other option from the drop-down list.</p>
+                    </div>
+                    <div class="col s9 offset-s1"><img src="../assets/images/course/add-course-semester-semester-dropdown.png" class="responsive-img" alt="semester drop-down"></div>
+                    <div class="col s9">
+                        <p>(3) Once the semester has been selected you can now enter the course code e.g. MATH-110. Course code must start with 2 alphabets and can only contain digits, letters, spaces, underscores, and dashes. </p>
+                    </div>
+                    <div class="col s9 offset-s1"><img src="../assets/images/course/add-course-code.png" class="responsive-img" alt="course code"></div>
+                    <div class="col s9">
+                        <p>(4) Once the semester and course code are filled out you can now enter the course name e.g. Intro to Calculus. It must not contain (){}|\`~ characters.
+                        </p>
+                    </div>
+                    <div class="col s9 offset-s1"><img src="../assets/images/course/add-course-name.png" class="responsive-img" alt="course name"></div>
+                    <div class="col s9">
+                        <p>(5) Once the semester, course code and course name are filled, you can now click on the Add button. You should now see a Success! dialogue box. </p>
+                    </div>
+                    <div class="col s9 offset-s1"><img src="../assets/images/course/add-course-button.png" class="responsive-img" alt="add button"></div>
+                    <div class="col s9">
+                        <p>
+                            (6) In the Success dialogue box, you can now click ok and you course will be updated below the semester year. You can confirm by
+                            <a href="#viewCourse">viewing</a> the list of course for the semester year.
+                        </p>
+                    </div>
+                    <div class="col s9 offset-s1"><img src="../assets/images/course/add-course-success.png" class="responsive-img" alt="add button"></div>
+                </div>
+
+                <div id="viewCourse" class="row">
+                    <h5>View Course</h5>
+                    <div class="col s9">
+                        <p>(1) To view an added course or previously added course click on the year the course was taken in. You will then see a drop list of courses. (Years are displayed in descending order.) </p>
+                    </div>
+                    <div class="col s9 offset-s1"><img src="../assets/images/course/view-course-year.png" class="responsive-img" alt="course year"></div>
+                    <div class="col s9">
+                        <p>
+                            (2) In the drop list you can see all the courses added for the year grouped by the semesters for that year. From here you can see the assignment count for each course,
+                            <a href="#editCourse">edit a course </a> and
+                            <a href="#deleteCourse">delete a course</a>.</p>
+                    </div>
+                    <div class="col s9 offset-s1"><img src="../assets/images/course/view-course-year-dropdown.png" class="course year drop down" alt="add button"></div>
+                </div>
+
+                <div id="editCourse" class="row">
+                    <h5>Edit Course</h5>
+                    <div class="col s9">
+                        <p>(1) To edit a course, start by clicking on the year the course was taken. You will see a drop-down with the list of course. </p>
+                    </div>
+                    <div class="col s9 offset-s1"><img src="../assets/images/course/view-course-year.png" class="responsive-img" alt="course year"></div>
+                    <div class="col s9">
+                        <p>(2) In the drop list you can see all the courses added for the year grouped by the semesters for that year. From here you can see the assignment count for each course, edit a course field and delete a course.</p>
+                    </div>
+                    <div class="col s9 offset-s1"><img src="../assets/images/course/view-course-year-dropdown.png" class="responsive-img" alt="course year drop-down"></div>
+                    <div class="col s9">
+                        <p>(3) Click on the edit button next to the course you want to edit e.g. Winter 2020: MATH-100: Intro to Calculus. After clicking the edit button, the box above will change from Add Course to Edit course.</p>
+                    </div>
+                    <div class="col s9 offset-s1"><img src="../assets/images/course/edit-course-button.png" class="responsive-img" alt="edit button"></div>
+                    <div class="col s9">
+                        <p>(4) In the edit box you can choose to modify the semester, course code, course name or any combination of the three fields. In our case we will modify all three high lighted fields. </p>
+                    </div>
+                    <div class="col s9 offset-s1"><img src="../assets/images/course/edit-course.png" class="responsive-img" alt="edit course"></div>
+                    <div class="col s9">
+                        <p>(5) Once you are finished editing the course you can go ahead and click update and then yes to proceed with the changes made or no to remove all changes made. </p>
+                    </div>
+                    <div class="col s9 offset-s1"><img src="../assets/images/course/update-button.png" class="responsive-img" alt="update button"></div>
+                    <div class="col s9">
+                        <p>
+                            (6) After clicking yes, you should then see a Success! dialogue box. From this box you will know your course has been successfully added. You can confirm by
+                            <a href="viewCourse">viewing</a> the list of course for that semester year. </p>
+                    </div>
+                    <div class="col s9 offset-s1"><img src="../assets/images/course/edit-course-permission.png" class="responsive-img" alt="Permission dialogue box"></div>                    
+                </div>
+
+                <div id="deleteCourse" class="row">
+                    <h5>Delete Course</h5>
+                    <div class="col s9">
+                        <p>(1) To delete a course, start of by clicking on the year the course was taken. You will see a drop-down with the list of course. </p>
+                    </div>
+                    <div class="col s9 offset-s1"><img src="../assets/images/course/view-course-year.png" class="responsive-img" alt="course year"></div>
+                    <div class="col s9">
+                        <p>(2) In the drop list click on the delete button next to the course you want to delete e.g. Spring 2020: MATH-110: Calculus 1. You will then see a pop-up dialogue box.</p>
+                    </div>
+                    <div class="col s9 offset-s1"><img src="../assets/images/course/delete-button.png" class="course year drop down" alt="add button"></div>
+                    <div class="col s9">
+                        <p>(3) In the pop up dialogue box, click yes to continue deleting the semester or no to cancel and return to the course page.</p>
+                    </div>
+                    <div class="col s9 offset-s1"><img src="../assets/images/course/delete-course-permission.png" class="course year drop down" alt="add button"></div>
+                    <div class="col s9">
+                        <p>(4) After clicking yes to delete the course, "course deleted successfully" will be displayed in the top right for a few seconds.</p>
+                    </div>
+                    <div class="col s9 offset-s1"><img src="../assets/images/course/delete-course-success.png" class="course year drop down" alt="add button"></div>
+                    <div class="col s9">
+                        <p>
+                            (5) You can confirm a course was successfully removed by
+                            <a href="#viewSemester">viewing</a> the list of remaining course for the year if it is the only course the year will be removed from the existing course list.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <script src="../assets/js/materialize.min.js"></script>
+        <script src="../help.js"></script>
+</body>
+
+</html>

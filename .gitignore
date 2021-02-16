@@ -1,0 +1,17 @@
+node_modules
+
+# Config files.
+src/.config/assignments.json
+src/.config/courses.json
+src/.config/semesters.json
+src/.config/settings.json
+
+# Runtime data
+src/.DS_Store
+/.DS_Store
+
+# Electron-Forge
+out/
+
+# Assignment files.
+assignments/

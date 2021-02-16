@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Semesters</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
+    <!-- Import font awesome icons -->
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container center">
+        <div class="row">
+            <h4>Semesters</h4>
+            <h6>Add/Edit semesters.</h6>
+        </div>
+        <nav class="teal">
+            <div class="nav-wrapper left">
+                <div class="col s12">
+                    <a href="./home.html" class="breadcrumb">&nbsp;Home</a>
+                    <a href="#" class="breadcrumb">Semesters</a>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col xl4 offset-xl4">
+                <!-- Creating a div for add semester. -->
+                <div class="section center" id="addSemesterDiv">
+                    <fieldset>
+                        <legend>
+                            <h6>Add Semester</h6>
+                        </legend>
+                        <div class="row">
+                            <div class="input-field section col xl12">
+                                <select tabindex="1" id="seasonSelection">
+                                    <option value="" selected>Select Term</option>
+                                    <option value="Winter">Winter</option>
+                                    <option value="Spring">Spring</option>
+                                    <option value="Summer">Summer</option>
+                                    <option value="Fall">Fall</option>
+                                </select>
+                                <label for="seasonSelection">Term</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field section col xl12">
+                                <input required tabindex="2" placeholder="Enter year of study" id="year" type="text"
+                                    maxlength="4" class="validate" data-length="4">
+                                <label for="year">Year</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col xl12">
+                                <button tabindex="3" class="waves-effect waves-light btn" id="addSemesterButton">
+                                    <i class='material-icons left'>add_circle</i>
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <!-- By default, the div for edit semester will be hidden. -->
+                <div class="section center hide" id="editSemesterDiv">
+                    <fieldset>
+                        <legend>
+                            <h6>Edit Semester</h6>
+                        </legend>
+                        <div class="row">
+                            <div class="input-field section col xl12">
+                                <input type="hidden" id="editSemesterId" value="">
+                                <select tabindex="1" id="editSeasonSelection">
+                                    <option value="" selected>Select Term</option>
+                                    <option value="Winter">Winter</option>
+                                    <option value="Spring">Spring</option>
+                                    <option value="Summer">Summer</option>
+                                    <option value="Fall">Fall</option>
+                                </select>
+                                <label for="editSeasonSelection">Term</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field section col xl12">
+                                <input required tabindex="2" placeholder="Enter year of study" id="editYear" type="text"
+                                    maxlength="4" class="validate" data-length="4">
+                                <label for="editYear">Year</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col xl12">
+                                <button tabindex="3" class="waves-effect waves-light btn" id="updateSemesterButton">
+                                    <i class='material-icons left'>check_circle</i>
+                                    Update
+                                </button>
+                                <button tabindex="4" class="waves-effect waves-light btn"
+                                    id="cancelUpdateSemesterButton">
+                                    <i class='material-icons left'>cancel</i>
+                                    Cancel
+                                </button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xl8 offset-xl2">
+                <h5>Existing Semesters</h5>
+                <div class="section card-panel" id="allSemestersList">
+                    <!-- Existing semesters will dynamically be displayed here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/materialize.min.js"></script>
+    <script src="./semester.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+{
+  "name": "assignment-organizer",
+  "productName": "Assignment Organizer",
+  "version": "0.0.1",
+  "description": "Organize your assignments.",
+  "main": "src/index.js",
+  "author": "Shubham Mehta",
+  "license": "GPL-3.0-only",
+  "devDependencies": {
+    "@electron-forge/cli": "6.0.0-beta.54",
+    "@electron-forge/maker-dmg": "^6.0.0-beta.54",
+    "@electron-forge/maker-squirrel": "6.0.0-beta.54",
+    "@electron-forge/maker-zip": "6.0.0-beta.54",
+    "electron": "11.0.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "clean": "node clean-data.js"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "executableName": "assignment-organizer",
+        "icon": "src/assets/icons/App"
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "assignment-organizer",
+            "exe": "assignment-organizer.exe",
+            "icon": "src/assets/icons/App.ico",
+            "setupIcon": "src/assets/icons/App.ico"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "linux"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-dmg"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Semesters</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
+    <!-- Import font awesome icons -->
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container center">
+        <div class="row">
+            <h4>Settings</h4>
+            <h6>Back-up Settings.</h6>
+        </div>
+        <nav class="teal">
+            <div class="nav-wrapper left">
+                <div class="col xl12">
+                    <a href="./home.html" class="breadcrumb">&nbsp;Home</a>
+                    <a href="#" class="breadcrumb">Settings</a>
+                </div>
+            </div>
+        </nav>
+        <div class="row section">
+            <div class="col xl8 offset-xl2">
+                <ul class="collapsible">
+                    <!-- Local back-up settings. -->
+                    <li class="active">
+                        <div class="collapsible-header teal">
+                            <i class="far fa-hdd"></i>
+                            Local Back-up
+                        </div>
+                        <div class="collapsible-body">
+                            <div class="row">
+                                <div class="input-field section col xl12">
+                                    <input class="file-path" id="assignmentRootFolder" type="text"
+                                        value="current directory" readonly>
+                                    <label for="assignmentRootFolder" class="teal-text">Local Back-up Directory</label>
+                                    <span class="helper-text left">Change local back-up directory or Reset to default
+                                        directory</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col xl12">
+                                    <button tabindex="1" class="waves-effect waves-light btn"
+                                        id="changeRootFolderButton">
+                                        <i class="material-icons left">folder_special</i>
+                                        Change
+                                    </button>
+                                    <button tabindex="2" class="waves-effect waves-light btn"
+                                        id="setDefaultRootFolderButton">
+                                        <i class="material-icons left">sync</i>
+                                        Reset
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/materialize.min.js"></script>
+    <script src="./setting.js"></script>
+</body>
+
+</html>
